@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:quize_app/startpage.dart';
 import 'package:quize_app/question_screen.dart';
+import 'package:quize_app/data/questions.dart';
+import 'package:quize_app/ResultScreen.dart';
 
 class Quize extends StatefulWidget {
   const Quize({super.key});
@@ -28,6 +30,12 @@ class _Quizes extends State<Quize> {
 
   void chooseAnswer(String answer) {
     selectedans.add(answer);
+    if (selectedans.length == questions.length) {
+      selectedans = [];
+      setState(() {
+        screen = ResultScreen(selectedans: selectedans);
+      });
+    }
   }
 
   @override
