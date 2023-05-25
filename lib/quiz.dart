@@ -28,12 +28,18 @@ class _Quizes extends State<Quize> {
     });
   }
 
+  void resetquiz() {
+    selectedans = [];
+    setState(() {
+      screen = QuestionScreen(onselectAnswer: chooseAnswer);
+    });
+  }
+
   void chooseAnswer(String answer) {
     selectedans.add(answer);
     if (selectedans.length == questions.length) {
-      selectedans = [];
       setState(() {
-        screen = ResultScreen(selectedans: selectedans);
+        screen = ResultScreen(resetquiz, selectedans: selectedans);
       });
     }
   }

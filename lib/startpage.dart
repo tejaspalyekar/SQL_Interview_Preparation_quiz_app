@@ -9,12 +9,12 @@ class StartPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
         child: Column(mainAxisSize: MainAxisSize.min, children: [
-      Image.asset('assets/images/quiz-logo.png',
+      Image.asset('assets/images/sql.png',
           width: 300, color: const Color.fromARGB(151, 255, 255, 255)),
       const SizedBox(
         height: 30,
       ),
-      const Text('Learn Flutter The Fun Way!!',
+      const Text('SQL Interview Questions!!',
           style: TextStyle(
             color: Colors.white,
             fontSize: 25,

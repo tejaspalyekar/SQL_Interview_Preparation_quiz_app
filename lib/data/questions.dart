@@ -2,54 +2,90 @@ import 'package:quize_app/models/quiz_questions.dart';
 
 const questions = [
   QuizQuestion(
-    'What are the main building blocks of Flutter UIs?',
+    'Which of the following are some common RDBMS in use?',
     [
-      'Widgets',
-      'Components',
-      'Blocks',
-      'Functions',
+      'All of the above',
+      'MySQL',
+      'HeidiSQL',
+      'Oracle',
     ],
   ),
-  QuizQuestion('How are Flutter UIs built?', [
-    'By combining widgets in code',
-    'By combining widgets in a visual editor',
-    'By defining widgets in config files',
-    'By using XCode for iOS and Android Studio for Android',
+  QuizQuestion('What command is used to create a new table in SQL?', [
+    'Create TABLE',
+    'BUILD TABLE',
+    'GENERATE TABLE',
+    'None of thr above',
   ]),
   QuizQuestion(
-    'What\'s the purpose of a StatefulWidget?',
+    'What does the following statement in SQL do? \n DROP TABLE student;',
     [
-      'Update UI as data changes',
-      'Update data as UI changes',
-      'Ignore data changes',
-      'Render UI that does not depend on data',
-    ],
-  ),
-  QuizQuestion(
-    'Which widget should you try to use more often: StatelessWidget or StatefulWidget?',
-    [
-      'StatelessWidget',
-      'StatefulWidget',
-      'Both are equally good',
+      'Deletes a table called student',
+      'Creates a table called student',
+      'Check if there is a table called student',
       'None of the above',
     ],
   ),
   QuizQuestion(
-    'What happens if you change data in a StatelessWidget?',
+    'What does BLOB in SQL stand for?',
     [
-      'The UI is not updated',
-      'The UI is updated',
-      'The closest StatefulWidget is updated',
-      'Any nested StatefulWidgets are updated',
+      'Binary Large Object',
+      'Big Large Object',
+      'Binary Language for Object',
+      'None of the above',
     ],
   ),
   QuizQuestion(
-    'How should you update data inside of StatefulWidgets?',
+    'Which of the following datatype is most appropriate for storing a string of up to 255 characters?',
     [
-      'By calling setState()',
-      'By calling updateData()',
-      'By calling updateUI()',
-      'By calling updateState()',
+      'TINY TEXT',
+      'TEXT',
+      'BLOB',
+      'BINARY',
+    ],
+  ),
+  QuizQuestion(
+    'which of the folowing commands is used to delete all rows and free up spcae from a table?',
+    [
+      'TRUNCATE',
+      'DROP',
+      'DELETE',
+      'ALTER',
+    ],
+  ),
+  QuizQuestion(
+    'what does the following code snippet do? \n ALTER TABLE STUDENT ADD(ADDRESS VARCHAR2(20));',
+    [
+      'Adds a column called ADDRESS in the table student',
+      'Checks if a column called ADDRESS is present in the table student',
+      'invalid syntax',
+      'none of the above',
+    ],
+  ),
+  QuizQuestion(
+    ' What does the following code snippet do? \n DELETE FROM STUDENTS\nWHERE AGE = 16;\nROLLBACK;',
+    [
+      'Performs an undo operation on the delete operation',
+      'deletes the rows from the table where AGE = 16',
+      'DElete the entire table',
+      'None of the above',
+    ],
+  ),
+  QuizQuestion(
+    'Full form of DDL?',
+    [
+      'DATA DEFINATION LANGUAGE',
+      'DATA DERIVATION LANGUAGE',
+      'DYNAMIC DATA LANGUAGE',
+      'DETAILED DATA LANGUAGE',
+    ],
+  ),
+  QuizQuestion(
+    'Which of the following are vaild logical operators in SQL?',
+    [
+      'ALL of the above',
+      'ALL',
+      'AND',
+      'SOME',
     ],
   ),
 ];
