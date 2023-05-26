@@ -1,4 +1,4 @@
-# SQL Interview Quize Application Using FLutter Framework
+# SQL Interview Quiz Application Using FLutter Framework
 
 
 ![Screenshot_1685001883](https://github.com/tejaspalyekar/quize_app/assets/66875860/1e6cd5f6-af83-4631-833e-31cb0e509469)
